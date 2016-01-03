@@ -12,7 +12,7 @@ public partial class Account_Register : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        
+        Session.RemoveAll();
     }
 
     protected void RegisterUser_CreatedUser(object sender, EventArgs e)
@@ -40,6 +40,6 @@ public partial class Account_Register : System.Web.UI.Page
         }
         cnn.Close();
        
-        Response.Redirect("About.aspx");
+        Response.Redirect("~/About.aspx");
     }
 }

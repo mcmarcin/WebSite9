@@ -88,9 +88,9 @@ first child of the left and right table columns */
 
 .page
 {
-    width: 960px;
+    width: 1345px; 
     background-color: #fff;
-    margin: 20px auto 0px auto;
+    margin: 0px auto 0px auto;
     border: 1px solid #496077;
 }
 

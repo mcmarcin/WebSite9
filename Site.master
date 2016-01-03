@@ -17,16 +17,14 @@
                 </h1>
             </div>
             <div class="loginDisplay">
-                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
-                    <AnonymousTemplate>
-                        <asp:Button ID="Zaloguj" runat="server" Text="Zaloguj" 
-                            onclick="Zaloguj_Click1" />
-                    </AnonymousTemplate>
-                    <LoggedInTemplate>
-                        Welcome <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
-                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/"/> ]
-                    </LoggedInTemplate>
-                </asp:LoginView>
+                
+                   <asp:Label ID="LabelLogin" runat="server" Text="Label" Visible="False"></asp:Label>
+                   <asp:Button ID="Zaloguj" runat="server" Text="Zaloguj" 
+                            onclick="Zaloguj_Click" />
+                   <asp:Button ID="Wyloguj" runat="server" onclick="Wyloguj_Click" 
+                        Text="Wyloguj" Visible="False" />
+                    
+                
             </div>
             <div class="clear hideSkiplink">
                 <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
