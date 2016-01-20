@@ -42,11 +42,13 @@
                         <asp:CheckBox ID="RememberMe" runat="server" 
                             oncheckedchanged="RememberMe_CheckedChanged"/>
                         <asp:Label ID="RememberMeLabel" runat="server" AssociatedControlID="RememberMe" CssClass="inline">Zapamiętaj mnie</asp:Label>
+                        <asp:Label ID="RememberMeLabel" runat="server" AssociatedControlID="RememberMe" 
+                        CssClass="inline">Zapamiętaj mnie</asp:Label>
                     </p>
                     
                 
                 <p class="submitButton">
-                    <asp:Button ID="LoginButton" runat="server" CommandName="Login" Text="Zaloguj" 
+                    <asp:Button ID="LoginButton" runat="server" Text="Zaloguj" 
                         ValidationGroup="LoginUserValidationGroup" onclick="LoginButton_Click"/>
                
                 </p>
